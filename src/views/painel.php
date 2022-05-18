@@ -2,6 +2,9 @@
   include("php/protect.php");
   protect();
 ?>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
   
     <div class="flex flex-col items-center gap-3 container m-auto justify-center sm:flex-row sm:items-center sm:justify-center">
       <div class=" text-center flex flex-row gap-2 justify-center  p-2 items-baseline rounded shadow-md container relative">
@@ -44,7 +47,7 @@
         <div id="dropdownUsers" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow  dark:bg-gray-700" active="0">
               <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUser">
                 <li class="flex">
-                  <button href="?pagina=alterasenha"  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex-1">Alterar Senha</button>
+                  <button href="?pagina=painel&painel=alterasenha"  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex-1">Alterar Senha</button>
                 </li>
                 <li>
                   <a href="php/logout.php" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex-1">Logout</a>
@@ -63,6 +66,28 @@
 
             
    
+      <div class="mt-10">
+      <?php 
+
+            
+
+      if (isset($_GET["painel"])){
+        
+
+          
+
+          if ($_GET["painel"] == "alterasenha"){
+              require("views_painel/alterar_senha.php");
+          }
+
+    
+
+
+
+}
+?>
+      </div>
+
 
     
 

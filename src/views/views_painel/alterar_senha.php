@@ -8,9 +8,9 @@
         <h1 class="text-lg text-zinc-100">Alterar Senha</h1>
         <div class="flex flex-col  gap-3" >
           
-          <input type="password" id="pass_new" placeholder="********" required class="text-white p-1 bg-transparent focus:outline-none focus:border-b-2 focus:border-b-red-500" required>
+          <input type="password" id="pass_new"  placeholder="********" required class="text-white p-1 bg-transparent focus:outline-none focus:border-b-2 focus:border-b-blue-500" required>
         </div>
-         <button id="alterasenha-btn" href="" class=" bg-red-600 border-2 text-white rounded border-transparent h-10 outline-none">Alterar</button>
+         <button id="alterasenha-btn" class=" bg-blue-600 border-2 text-white rounded border-transparent h-10 outline-none">Alterar</button>
           <div>
             
           <button class="text-white text-sm" href="?pagina=painel">Voltar</button>  

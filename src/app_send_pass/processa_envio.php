@@ -62,13 +62,13 @@
             $phpmailer->Host = 'smtp.mailtrap.io';
             $phpmailer->SMTPAuth = true;
             $phpmailer->Port = 2525;
-            $phpmailer->Username = '301ae69b6b7197';
-            $phpmailer->Password = '0c2dfa5ec2b046';                               //SMTP password
+            $phpmailer->Username = 'af653cff9934a8';
+            $phpmailer->Password = '8adfbdd63a0c5c';                           //SMTP password
                      //Enable implicit TLS encryption
                                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $phpmailer->setFrom('ericalmeida111@gmail.com', 'Web remetente');
+            $phpmailer->setFrom('suporte@sistemaweb.com', 'Web remetente');
             $phpmailer->addAddress($email, 'Web destinatário');     //Add a recipient              //Name is optional
             //  $mail->addReplyTo('diogo.alcarde123@gmail.com', 'Resposta');
             //$mail->addCC('cc@example.com');

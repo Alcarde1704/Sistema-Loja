@@ -29,6 +29,7 @@ $("#login-button").click(function(){
       success: function (retorno) {
         if (retorno == "1x1") {
           window.location.href = "?pagina=painel";
+          
         }else if(retorno == "1x0"){
           alert("Usuário e/ou Senha Inválido(s)");
         }
@@ -123,9 +124,7 @@ $("#alterasenha-btn").click(function(){
   var dados = new Object();
   
 
-  //recupero usuario e senha informados
-
-  dados["senha"] = $("#pass").val();
+  dados["senha_nova"] = $("#pass_new").val();
   
 
 
@@ -136,14 +135,14 @@ $("#alterasenha-btn").click(function(){
   }
   
   $.ajax({
-      url: '../src/php/core-sys-alterpass.php',
+      url: './src/php/core-sys-alterpass.php',
       type: 'POST',
   
       success: function (retorno) {
         if (retorno == "1x1") {
-          window.location.href = "?pagina=painel";
+          alert("ok");
         }else if(retorno == "1x0"){
-          alert("Usuário e/ou Senha Inválido(s)");
+          alert("Ocorreu algum erro, tente novamente mais tarde");
         }
       },
   
